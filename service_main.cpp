@@ -51,6 +51,8 @@
 
 #include <QDebug>
 #include <QAndroidService>
+#include <QUrl>
+#include <QRemoteObjectHostBase>
 
 int main(int argc, char *argv[])
 {

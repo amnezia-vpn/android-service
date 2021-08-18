@@ -5,9 +5,9 @@ QT += core androidextras remoteobjects
 
 SOURCES += service_main.cpp
 
-include(../common/common_ro.pri)
+include(./common/common_ro.pri)
 
-REPC_SOURCE += ../common/qtandroidservice.rep
+REPC_SOURCE += ./common/qtandroidservice.rep
 
-target.path = $$[QT_INSTALL_EXAMPLES]/androidextras/services/serviceremoteobjects
+target.path = $$PWD
 INSTALLS += target

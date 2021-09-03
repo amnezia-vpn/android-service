@@ -1,7 +1,7 @@
 #ifndef OPENVPNANDROIDPROTOCOL_H
 #define OPENVPNANDROIDPROTOCOL_H
 
-//#include "ovpncli.hpp"
+#include "ovpncli.hpp"
 
 class OpenVpnAndroidProtocol
 {

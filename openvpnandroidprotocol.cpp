@@ -2,5 +2,5 @@
 
 OpenVpnAndroidProtocol::OpenVpnAndroidProtocol()
 {
-
+//    openvpn::ClientAPI::OpenVPNClient her;
 }

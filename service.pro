@@ -13,8 +13,8 @@ REPC_SOURCE += ./common/qtandroidservice.rep
 target.path = $$PWD
 INSTALLS += target
 
-#LIBS += -lopenvnp3
-#INCLUDEPATH
+INCLUDEPATH += $PWD/ovpncli.hpp
+LIBS += -lamnezianl
 
 HEADERS += \
     openvpnandroidprotocol.h \

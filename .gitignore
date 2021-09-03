@@ -1,0 +1,4 @@
+build/temp*
+build-*
+*.pro.user
+*.pro.user.*

@@ -2,3 +2,12 @@ build/temp*
 build-*
 *.pro.user
 *.pro.user.*
+*.so
+linker64
+*Makefile*
+*qmake*
+*.json
+android-build/
+x86_64
+app_process
+rep_*

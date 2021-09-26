@@ -1,0 +1,9 @@
+class AmneziaAndroidService {
+    SLOT(void sendToService(const QString &name));
+    SLOT(bool isConnected());
+    SLOT(bool isDisconnected());
+    SLOT(int start());
+    SLOT(void stop());
+    SIGNAL(messageFromService(const QString &message));
+
+}

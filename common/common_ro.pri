@@ -1,3 +1,8 @@
 INCLUDEPATH += $$PWD
 
-HEADERS += $$PWD/qtandroidservice_ro.h
+HEADERS += \
+    $$PWD/amneziaandroidservice.h
+
+SOURCES += \
+    $$PWD/amneziaandroidservice.cpp
+

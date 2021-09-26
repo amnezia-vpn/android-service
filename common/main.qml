@@ -81,7 +81,7 @@ Window {
         y: 220
         text: "Send name to Service"
         anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: qtAndroidService.sendToService(pingText.text)
+        onClicked: amneziaService.sendToService(pingText.text)
     }
 
     Text {
@@ -103,7 +103,7 @@ Window {
     }
 
     Connections {
-        target: qtAndroidService
+        target: amneziaService
         function onMessageFromService(message) {
             pongText.text = message
         }

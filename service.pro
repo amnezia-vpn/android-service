@@ -3,19 +3,23 @@ TARGET = service
 CONFIG += dll
 QT += core androidextras remoteobjects
 
-SOURCES += service_main.cpp \
-    openvpnandroidprotocol.cpp
+SOURCES += service_main.cpp
 
 include(./common/common_ro.pri)
 
-REPC_SOURCE += ./common/qtandroidservice.rep
+REPC_SOURCE += ./common/amneziaandroidservice.rep
 
-target.path = $$PWD
+target.path = $PWD
 INSTALLS += target
 
-INCLUDEPATH += $PWD/ovpncli.hpp
-LIBS += -lamnezianl
+INCLUDEPATH += \
+            . \
+            ../amnezia-library \
+            ../amnezia-library/src \
+            ../amnezia-library/deps/openvpn/openvpn3 \
 
-HEADERS += \
-    openvpnandroidprotocol.h \
-    ovpncli.hpp
+
+
+LIBS += -L../amnezia-library -lamnezianl
+LIBS += -L../amnezia-library\deps\openvpn -llz4
+LIBS += -L../amnezia-library\deps\openvpn -llzo

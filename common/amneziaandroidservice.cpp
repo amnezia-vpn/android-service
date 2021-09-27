@@ -1,12 +1,12 @@
 #include "amneziaandroidservice.h"
-#include <amnezia_ovpn.h>
+using namespace AmneziaVPN;
 
 
 void AmneziaAndroidService::sendToService(const QString &name) {
-    AmneziaVPN::OpenVPNProtocol protocol1;
-
-    emit messageFromService("Hello " + name);
-    qDebug() << "Something";
+//    emit messageFromService("Hello " + name);
+    AmneziaVPN::OpenVPNProtocol m_openVpnProtocol;
+    std::string message = m_openVpnProtocol.returnStatus();
+    emit messageFromService("Hello " + QString::fromStdString(message));
 };
 
 
@@ -22,7 +22,7 @@ bool AmneziaAndroidService::isDisconnected()
 
 int AmneziaAndroidService::start()
 {
-   return 1;
+
 }
 
 void AmneziaAndroidService::stop()

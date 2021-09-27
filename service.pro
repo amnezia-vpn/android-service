@@ -23,3 +23,4 @@ INCLUDEPATH += \
 LIBS += -L../amnezia-library -lamnezianl
 LIBS += -L../amnezia-library\deps\openvpn -llz4
 LIBS += -L../amnezia-library\deps\openvpn -llzo
+

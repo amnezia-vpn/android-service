@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-   startService();
+    startService();
 
     QRemoteObjectNode repNode;
     repNode.connectToNode(QUrl(QStringLiteral("local:replica")));

@@ -12,6 +12,4 @@ public slots:
     int start() override;
     void stop() override;
 
-
-
 };

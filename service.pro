@@ -12,6 +12,12 @@ REPC_SOURCE += ./common/amneziaandroidservice.rep
 target.path = $PWD
 INSTALLS += target
 
+android {
+    assets.files = config/osinit.ovpn
+    assets.path = /assets/config/
+    INSTALLS += assets
+}
+
 INCLUDEPATH += \
             . \
             ../amnezia-library \
@@ -23,4 +29,3 @@ INCLUDEPATH += \
 LIBS += -L../amnezia-library -lamnezianl
 LIBS += -L../amnezia-library\deps\openvpn -llz4
 LIBS += -L../amnezia-library\deps\openvpn -llzo
-

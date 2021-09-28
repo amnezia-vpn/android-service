@@ -5,4 +5,3 @@ HEADERS += \
 
 SOURCES += \
     $$PWD/amneziaandroidservice.cpp
-

@@ -6,6 +6,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QFile>
+
+
+#include <sstream>
+#include <fstream>
 
 void startService()
 {
@@ -40,3 +45,4 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+

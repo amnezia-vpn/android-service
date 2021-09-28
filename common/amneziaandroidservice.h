@@ -12,4 +12,8 @@ public slots:
     int start() override;
     void stop() override;
 
+private:
+    void readConfigData(std::string configPath, std::string& buffer);
+    QSharedPointer<AmneziaVPN::OpenVPNProtocol> m_openVpnProtocol;
+
 };
